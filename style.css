@@ -1,1 +1,29 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+header, footer { background: #f8f8f8; padding: 20px; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav a { margin: 0 10px; text-decoration: none; color: #333; }
+.btn { background: black; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; }
+.container { max-width: 1200px; margin: auto; padding: 20px;
+        background-image: url('japao.jpg'); /* coloque a imagem na pasta do projeto */
+        background-size: cover;             /* cobre toda a área */
+        background-position: center;        /* centraliza a imagem */
+        border-radius: 15px;                /* bordas arredondadas */
+        padding: 40px;                      /* espaço interno */
+        color: white;                       /* texto branco para contraste */
+        margin: 20px auto;                  /* margem superior/inferior */
+        max-width: 800px;                   /* largura máxima */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra para destacar */
+    }
+h2 { margin: 20px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card, .story, .highlight { background: #eee; padding: 20px; border-radius: 8px; }
+.card img, .story img, .highlight img { width: 100%; height: 150px; background: #ccc; border-radius: 8px; }
+footer { text-align: center; font-size: 14px; }
+.newsletter input { padding: 10px; width: 70%; border: 1px solid #ccc; border-radius: 4px; margin-right: 10px; }
+.newsletter button { padding: 10px 20px; }
 
+@media (max-width: 768px) {
+    nav { flex-direction: column; align-items: flex-start; }
+    .newsletter input { width: 100%; margin-bottom: 10px; }
+}
