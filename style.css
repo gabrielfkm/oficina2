@@ -1,29 +1,339 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; line-height: 1.6; }
-header, footer { background: #f8f8f8; padding: 20px; }
-nav { display: flex; justify-content: space-between; align-items: center; }
-nav a { margin: 0 10px; text-decoration: none; color: #333; }
-.btn { background: black; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; }
-.container { max-width: 1200px; margin: auto; padding: 20px;
-        background-image: url('japao.jpg'); /* coloque a imagem na pasta do projeto */
-        background-size: cover;             /* cobre toda a área */
-        background-position: center;        /* centraliza a imagem */
-        border-radius: 15px;                /* bordas arredondadas */
-        padding: 40px;                      /* espaço interno */
-        color: white;                       /* texto branco para contraste */
-        margin: 20px auto;                  /* margem superior/inferior */
-        max-width: 800px;                   /* largura máxima */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra para destacar */
-    }
-h2 { margin: 20px 0; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-.card, .story, .highlight { background: #eee; padding: 20px; border-radius: 8px; }
-.card img, .story img, .highlight img { width: 100%; height: 150px; background: #ccc; border-radius: 8px; }
-footer { text-align: center; font-size: 14px; }
-.newsletter input { padding: 10px; width: 70%; border: 1px solid #ccc; border-radius: 4px; margin-right: 10px; }
-.newsletter button { padding: 10px 20px; }
 
-@media (max-width: 768px) {
-    nav { flex-direction: column; align-items: flex-start; }
-    .newsletter input { width: 100%; margin-bottom: 10px; }
+    
+
+
+
+
+.grid-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+.grid-cards p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.image-section h1, .image-section p {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.image-section button {
+    margin-top: 20px;
+}
+
+.info-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-culture, .card-other {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+}
+
+.card-culture img, .card-other img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+
+
+
+h2 { 
+    margin: 20px 0; 
+    color: black;
+}
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+.card, .story, .highlight { 
+    background: #eee; 
+    padding: 20px; 
+    border-radius: 8px; 
+    color: black;
+}
+.card img, .story img, .highlight img { 
+    width: 100%; 
+    height: 150px; 
+    background: #ccc; 
+    border-radius: 8px; 
+    
+}
+
+
+h1 {
+    color: black
+}
+p {
+    color: black;
+}
+
+
+header {
+    background-color: #ccc;
+    padding: 1rem 2rem;
+    width: 80%; 
+    max-width: 800px; 
+    margin: 2rem auto; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+nav a { 
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #333; 
+}
+body { 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+}
+.container {        
+    border-radius: 15px;                
+    padding: 20px;                      
+    color: white;                       
+    margin: 20px auto;                  
+    max-width: 1850px;                   
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+}
+.container p, h1 {
+    color: white;
+}
+.link-card {
+    display: contents; /* Faz o link ser "transparente" no layout */
+    text-decoration: none;
+    color: inherit;
+}
+.intro {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "intro cultura"
+        "intro secundarios";
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 600px;
+    background-color: white;
+}
+.card_intro {
+    grid-area: intro;
+    background-image: url('./img/japao.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+.card_cultura {
+    grid-area: cultura;
+    background-image: url('./img/card_cultura.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    font-size: 24px;  
+    font-weight: bold;
+}
+.cards-secundarios {
+    grid-area: secundarios;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.card_economia, .card_turismo {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    font-size: 24px;  
+    font-weight: bold;
+}
+.card_economia {
+    background-image: url('./img/card_economia.jpg');
+}
+
+.card_turismo {
+    background-image: url('./img/card_turismo.jpg');
+}
+
+.historia-container {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+}
+.historia-imagem {
+    flex: 1 1 300px;
+    height: auto;
+}
+.historia-imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.historia-conteudo {
+    flex: 2 1 500px;
+} 
+.historia-conteudo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.historia-conteudo .periodo {
+    margin-bottom: 1.5rem;
+}
+.periodo h3 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+.periodo p {
+    color: #555;
+    line-height: 1.6;
+}
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: auto auto; 
+}
+
+footer { 
+    text-align: center; 
+    font-size: 14px;
+    background: #f8f8f8; 
+    padding: 20px; 
+}
+@media (max-width: 768px) {
+    nav { 
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .newsletter input { 
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+}
+
+/*Página Cultura*/
+#cultura {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem; /* Espaço entre as seções */
+    padding: 1.5rem;
+    justify-items: center; /* Alinha as seções no centro horizontalmente */
+    margin-top: 2rem;
+}
+.subsecao {
+    background-color: #d3d3d3; /* Cor cinza claro */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box; /* Inclui o padding e border no tamanho total */
+    transition: transform 0.3s ease-in-out; /* Efeito de transição */
+}
+  
+  /* Efeito de hover nas seções */
+.subsecao:hover {
+    transform: translateY(-10px); /* Faz com que as seções subam ao passar o mouse */
+}
+  
+  /* Títulos */
+.subsecao h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+  
+.subsecao p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+.pontos_turisticos {
+    margin: 20px;
+}
+  
+  /* Responsividade: 2 colunas em telas menores */
+@media (max-width: 1200px) {
+    #cultura {
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+}
+  
+  /* Responsividade: 1 coluna em telas muito pequenas */
+@media (max-width: 768px) {
+    #cultura {
+      grid-template-columns: 1fr; /* 1 coluna em telas ainda menores */
+    }
+}
+  
+  
+  
+  
+
