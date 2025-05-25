@@ -95,7 +95,7 @@ p {
     color: black;
 }
 
-
+/*BASE*/
 header {
     background-color: #ccc;
     padding: 1rem 2rem;
@@ -131,11 +131,7 @@ body {
 .container p, h1 {
     color: white;
 }
-.link-card {
-    display: contents; /* Faz o link ser "transparente" no layout */
-    text-decoration: none;
-    color: inherit;
-}
+/*SEÇÃO INTRO*/
 .intro {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -216,16 +212,15 @@ body {
 .card_turismo {
     background-image: url('./img/card_turismo.jpg');
 }
-/*historia*/
+/*SEÇÃO HISTÓRIA*/
 #historia {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     padding: 1.5rem;
     background-color: #fdfdfd;
-    border-radius: 12px;
 }
-#historia img {
+.img {
     flex: 1 1 300px;
     height: auto;
     width: 100%;
@@ -234,23 +229,24 @@ body {
     object-fit: cover;
     margin-right: 20px;
 }
-.historia-conteudo {
+.texto {
     flex: 2 1 500px;
 } 
-#historia h2 {
+.texto h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #333;
 }
-#historia h3 {
+.texto h3 {
     font-size: 1.3rem;
     color: #444;
     margin-bottom: 0.5rem;
 }
-#historia p {
+.texto p {
     color: #555;
     line-height: 1.6;
 }
+/*SEÇÃO GALERIA*/
 .grid {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -259,6 +255,7 @@ body {
     grid-template-rows: auto auto; 
 }
 
+/*RODAPÉ*/
 footer { 
     text-align: center; 
     font-size: 14px;
