@@ -216,10 +216,10 @@ body {
 .card_turismo {
     background-image: url('./img/card_turismo.jpg');
 }
-
+/*historia*/
 #historia {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: 2rem;
     padding: 1.5rem;
     background-color: #fdfdfd;
