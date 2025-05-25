@@ -232,6 +232,7 @@ body {
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
+    margin-right: 20px;
 }
 .historia-conteudo {
     flex: 2 1 500px;
