@@ -118,6 +118,7 @@ nav a {
 body { 
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
+    color: black;
 }
 .container {        
     border-radius: 15px;                
