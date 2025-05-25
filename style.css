@@ -217,7 +217,7 @@ body {
     background-image: url('./img/card_turismo.jpg');
 }
 
-.historia-container {
+#historia {
     display: flex;
     align-items: stretch;
     gap: 2rem;
@@ -225,11 +225,9 @@ body {
     background-color: #fdfdfd;
     border-radius: 12px;
 }
-.historia-imagem {
+#historia img {
     flex: 1 1 300px;
     height: auto;
-}
-.historia-imagem img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -238,20 +236,17 @@ body {
 .historia-conteudo {
     flex: 2 1 500px;
 } 
-.historia-conteudo h2 {
+#historia h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #333;
 }
-.historia-conteudo .periodo {
-    margin-bottom: 1.5rem;
-}
-.periodo h3 {
+#historia h3 {
     font-size: 1.3rem;
     color: #444;
     margin-bottom: 0.5rem;
 }
-.periodo p {
+#historia p {
     color: #555;
     line-height: 1.6;
 }
