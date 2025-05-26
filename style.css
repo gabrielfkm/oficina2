@@ -223,7 +223,7 @@ body {
     background-color: #fdfdfd;
 }
 .img {
-    flex: 1 1 40%;
+    flex: 1;
     height: auto;
     margin-right: 20px;
 }
@@ -234,7 +234,7 @@ body {
     border-radius: 8px;
 }
 .texto {
-    flex: 2 1 60%;
+    flex: 2;
 } 
 .texto h2 {
     font-size: 2rem;
