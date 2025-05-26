@@ -314,8 +314,28 @@ footer {
 .pontos_turisticos {
     margin: 20px;
 }
+/*PÁGINA TURISMO*/
+.japao_turismo {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.japao_turismo img {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
   
-  /* Responsividade: 2 colunas em telas menores */
+/*PÁGINA ECONOMIA*/
+
+
+
+
+/* Responsividade: 2 colunas em telas menores */
 @media (max-width: 1200px) {
     #cultura {
       grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
