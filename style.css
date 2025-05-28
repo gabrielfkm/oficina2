@@ -159,41 +159,49 @@ body {
 .card_turismo {
     background-image: url('./img/card_turismo.jpg');
 }
-/*SEÇÃO HISTÓRIA*/
+
+/* SEÇÃO HISTÓRIA */
 #historia {
     display: flex;
     align-items: stretch;
     gap: 2rem;
     padding: 1.5rem;
     background-color: #fdfdfd;
-}
+    flex-wrap: wrap;
+    
 .img {
     flex: 1;
-    height: auto;
     max-width: 500px;
 }
+
 .img img {
-    height: 100%;
+    width: 100%; 
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
 }
+
 .texto {
     flex: 2;
-} 
+    min-width: 300px;
+
 .texto h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #333;
 }
+
 .texto h3 {
     font-size: 1.3rem;
     color: #444;
     margin-bottom: 0.5rem;
 }
+
 .texto p {
     color: #555;
     line-height: 1.6;
 }
+
 /*SEÇÃO GALERIA*/
 .grid {
     display: grid; 
